@@ -12,7 +12,7 @@ def download_file_from_google_drive(file_id, dest_path):
     if not os.path.exists(dest_path):
         try:
             st.info(f"📥 Downloading {dest_path} ... (first run only)")
-            url = f"https://drive.google.com/file/d/110kqwva3rwpIZauCrzwytOga3ZK1HB3L/view?usp=drive_link"
+            url = f"https://drive.google.com/file/d/110kqwva3rwpIZauCrzwytOga3ZK1HB3/view?usp=sharing"
             response = requests.get(url)
             with open(dest_path, "wb") as f:
                 f.write(response.content)
@@ -26,9 +26,9 @@ def load_system():
     try:
         # Replace with your own Google Drive file IDs
         drive_files = {
-            "knowledge_base.pkl": "YOUR_KB_FILE_ID",
-            "ecommerce_index.faiss": "YOUR_FAISS_FILE_ID",
-            "model_name.txt": "YOUR_MODEL_FILE_ID"
+            "knowledge_base.pkl": "1NHesLMOtvt-uNIk5ftHJjsLDhXDmX9sM",
+            "ecommerce_index.faiss": "110kqwva3rwpIZauCrzwytOga3ZK1HB3",
+            "model_name.txt": "1LsmWWwgxy5En1KLdaFDGy7FsTmu9A_Qr"
         }
 
         # Download missing files
@@ -127,3 +127,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
