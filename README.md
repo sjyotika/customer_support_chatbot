@@ -38,7 +38,7 @@ They are automatically downloaded when the app starts.
 ### 1️⃣ Clone the repo
 
 ```bash
-git clone https://github.com/your-username/customer-support-chatbot.git
+git clone https://github.com/sjyotika/customer-support-chatbot.git
 cd customer-support-chatbot
 ```
 
@@ -103,12 +103,6 @@ drive_files = {
 * "What is the refund policy?"
 * "Which payment methods are supported?"
 * "Tell me about shipping times."
-
----
-
-## 📜 License
-
-MIT License. Free to use and modify.
 
 ---
 
